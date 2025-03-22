@@ -1,12 +1,12 @@
 import React from "react";
 
-const RecipeCard = ({ recipe }) => {
+function RecipeCard({ name, description }) {
   return (
     <div className="recipe-card">
-      <h2>{recipe.name}</h2>
-      <p>{recipe.description}</p>
+      <h3>{name}</h3>
+      <p>{description}</p>
     </div>
   );
-};
+}
 
 export default RecipeCard;
